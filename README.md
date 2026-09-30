@@ -124,6 +124,8 @@ Tidak terdapat proses bisnis khusus di dalam file ini karena proses utama aplika
 
 # 5. Bagian Antarmuka `MainWindow.xaml`
 
+<img width="959" height="606" alt="image" src="https://github.com/user-attachments/assets/dfc038bf-d96e-4b75-90f5-f632a17c74f3" />
+
 `MainWindow.xaml` merupakan bagian yang mendefinisikan seluruh tampilan aplikasi.
 
 Secara umum halaman dibagi menjadi dua bagian:
@@ -132,6 +134,8 @@ Secara umum halaman dibagi menjadi dua bagian:
 2. **Data Absensi**
 
 ## 5.1 Form Input Absensi
+
+<img width="267" height="513" alt="image" src="https://github.com/user-attachments/assets/5c096caa-8a6e-4f81-9482-1047bab0300c" />
 
 Bagian form digunakan untuk memasukkan atau mengubah data absensi.
 
@@ -216,6 +220,8 @@ Sakit
 
 # 6. Tombol pada Form
 
+<img width="239" height="76" alt="image" src="https://github.com/user-attachments/assets/58bb8f95-0dd0-4085-9450-1488edcb0f79" />
+
 ## Simpan
 
 Digunakan untuk menambahkan data absensi baru ke database.
@@ -279,6 +285,8 @@ Yes
 
 # 7. DataGrid Absensi
 
+<img width="617" height="38" alt="image" src="https://github.com/user-attachments/assets/dee51f20-af7c-41d7-a25a-6d28218a6254" />
+
 Data absensi ditampilkan menggunakan `DataGrid`.
 
 Kolom yang ditampilkan:
@@ -314,8 +322,16 @@ Cari (NRP / Nama / Mata Kuliah)
 Pencarian dilakukan berdasarkan:
 
 - NRP
+
+  <img width="642" height="128" alt="image" src="https://github.com/user-attachments/assets/c1676f63-9ea2-4d85-8da7-4aadad1ef4e2" />
+  
 - Nama
+
+  <img width="645" height="106" alt="image" src="https://github.com/user-attachments/assets/9c0a7cea-807c-4eaa-b5aa-ad8b0b0456e1" />
+
 - Mata Kuliah
+
+  <img width="642" height="169" alt="image" src="https://github.com/user-attachments/assets/a95f82ef-6a58-4b45-8be2-fc5ce9171e94" />
 
 Ketika isi kotak pencarian berubah, event `TextChanged` dijalankan dan tabel langsung diperbarui.
 
@@ -323,7 +339,7 @@ Contoh:
 
 ```text
 Input:
-5025241001
+067/Bagus/Pemrogramman
 ```
 
 Maka tabel hanya menampilkan data yang berhubungan dengan keyword tersebut.
@@ -331,6 +347,8 @@ Maka tabel hanya menampilkan data yang berhubungan dengan keyword tersebut.
 ---
 
 # 9. Filter Status
+
+<img width="641" height="372" alt="image" src="https://github.com/user-attachments/assets/6dec59e1-75d4-403c-94ad-7f41d09ec07b" />
 
 Selain pencarian, tersedia filter berdasarkan status.
 
@@ -343,6 +361,8 @@ Izin
 Sakit
 Alpha
 ```
+
+<img width="648" height="148" alt="image" src="https://github.com/user-attachments/assets/708d8add-a0b4-4f02-baaa-d14195f26eff" />
 
 Ketika pilihan filter berubah, event `SelectionChanged` akan memanggil proses pemuatan ulang data.
 
@@ -363,6 +383,8 @@ yang ditampilkan.
 ---
 
 # 10. Ringkasan Data
+
+<img width="350" height="29" alt="image" src="https://github.com/user-attachments/assets/5855c42e-4578-4cbc-8edc-f5196876842f" />
 
 Pada bagian bawah tabel terdapat ringkasan data.
 
@@ -593,6 +615,8 @@ Validasi dilakukan sebelum proses `INSERT` maupun `UPDATE`.
 
 ## Validasi NRP
 
+<img width="332" height="119" alt="image" src="https://github.com/user-attachments/assets/bdfbdcb6-6202-4d10-b7b9-4020139023bf" />
+
 NRP:
 
 - Tidak boleh kosong.
@@ -615,6 +639,8 @@ ABC123
 
 ## Validasi Nama
 
+<img width="346" height="146" alt="image" src="https://github.com/user-attachments/assets/a9cf3f96-be9e-4ddb-8b72-001d2d467c01" />
+
 Nama:
 
 - Tidak boleh kosong.
@@ -624,30 +650,23 @@ Nama:
 
 ## Validasi Mata Kuliah
 
+<img width="380" height="141" alt="image" src="https://github.com/user-attachments/assets/c9277b6a-08ea-4501-bafd-d85f87b55252" />
+
 Pengguna harus memilih salah satu mata kuliah.
 
 ---
 
 ## Validasi Tanggal
 
+<img width="406" height="222" alt="image" src="https://github.com/user-attachments/assets/2603f1f5-177e-44d5-999f-cc931dc1dc09" />
+
 Tanggal harus dipilih dan tidak boleh melebihi tanggal hari ini.
 
 ---
 
-## Validasi Status
-
-Pengguna harus memilih salah satu status:
-
-```text
-Hadir
-Izin
-Sakit
-Alpha
-```
-
----
-
 ## Validasi Keterangan
+
+<img width="270" height="356" alt="image" src="https://github.com/user-attachments/assets/36a5a772-1452-4e0e-a124-3f9f0e79b163" />
 
 Jika status:
 
@@ -666,6 +685,8 @@ maka keterangan wajib diisi.
 ---
 
 ## Validasi Data Duplikat
+
+<img width="923" height="268" alt="image" src="https://github.com/user-attachments/assets/dd40f79c-36b2-4fc5-ae1c-a4dbc6d2e649" />
 
 Aplikasi juga melakukan pengecekan kombinasi:
 
@@ -732,322 +753,45 @@ Ringkasan diperbarui
 
 # 20. Dokumentasi Tampilan Aplikasi
 
-Bagian ini dapat digunakan untuk memasukkan screenshot hasil aplikasi.
-
 ## 20.1 Tampilan Utama
 
-**Screenshot:**
-
-> Tambahkan screenshot tampilan utama aplikasi di sini.
-
-Contoh yang dapat ditampilkan:
-
-- Form input.
-- DataGrid.
-- Search.
-- Filter status.
-- Ringkasan data.
-
----
+<img width="959" height="605" alt="image" src="https://github.com/user-attachments/assets/a1235083-c0d3-461a-bf69-57604e6d8102" />
 
 ## 20.2 Form Tambah Data
 
-**Screenshot:**
-
-> Tambahkan screenshot form ketika pengguna mengisi data absensi baru.
-
-Jelaskan field yang digunakan:
-
-- NRP
-- Nama
-- Mata Kuliah
-- Tanggal
-- Status
-- Keterangan
-
----
+<img width="270" height="509" alt="image" src="https://github.com/user-attachments/assets/438514eb-40eb-4370-b004-2d55c35fc72b" />
 
 ## 20.3 Data Berhasil Ditambahkan
 
-**Screenshot:**
-
-> Tambahkan screenshot setelah tombol `Simpan` berhasil digunakan.
-
-Tunjukkan bahwa data baru muncul pada DataGrid dan jumlah data pada ringkasan berubah.
-
----
+<img width="635" height="88" alt="image" src="https://github.com/user-attachments/assets/8fb93fbd-a830-4a66-9ee4-482b625e775a" />
 
 ## 20.4 Proses Update
 
-**Screenshot:**
+<img width="267" height="513" alt="image" src="https://github.com/user-attachments/assets/5b019345-ef56-4875-a774-a2b29b59cbef" />
 
-> Tambahkan screenshot ketika salah satu baris dipilih dan datanya muncul kembali pada form.
-
-Kemudian tambahkan screenshot setelah tombol `Update` ditekan.
-
----
+<img width="634" height="91" alt="image" src="https://github.com/user-attachments/assets/9dff5920-10b9-41db-9b39-a3bf639b71fb" />
 
 ## 20.5 Proses Hapus
 
-**Screenshot:**
+<img width="266" height="533" alt="image" src="https://github.com/user-attachments/assets/1eb6088e-8597-4969-a3a1-87e18e2c4602" />
 
-> Tambahkan screenshot dialog konfirmasi penghapusan data.
-
-Kemudian tambahkan screenshot DataGrid setelah data berhasil dihapus.
-
----
+<img width="635" height="122" alt="image" src="https://github.com/user-attachments/assets/e7485922-9e15-4c28-b2b0-b659fe5b79bf" />
 
 ## 20.6 Pencarian
 
-**Screenshot:**
+<img width="650" height="98" alt="image" src="https://github.com/user-attachments/assets/7f2ba595-1a37-4715-b7f9-3c0aae5e72af" />
 
-> Tambahkan screenshot ketika keyword dimasukkan pada kolom pencarian.
+<img width="641" height="98" alt="image" src="https://github.com/user-attachments/assets/97f44926-dea7-4448-8b26-f3e0fc3e3c45" />
 
-Tunjukkan bahwa data pada tabel berubah sesuai keyword.
-
----
+<img width="640" height="168" alt="image" src="https://github.com/user-attachments/assets/34dc9fb1-4b48-44b1-be47-91ca7458ec4f" />
 
 ## 20.7 Filter Status
 
-**Screenshot:**
+<img width="640" height="143" alt="image" src="https://github.com/user-attachments/assets/1d779ea2-f900-40fa-8857-38c14fe74448" />
 
-> Tambahkan screenshot ketika filter `Hadir`, `Izin`, `Sakit`, atau `Alpha` digunakan.
+<img width="640" height="124" alt="image" src="https://github.com/user-attachments/assets/261c1218-7f90-4697-850f-7c4f3e92db8a" />
 
-Tunjukkan bahwa DataGrid hanya menampilkan data dengan status yang dipilih.
-
----
-
-# 21. Skenario Pengujian
-
-Pengujian dilakukan untuk memastikan fungsi utama aplikasi berjalan sesuai kebutuhan.
-
-## A. Pengujian Form dan Validasi
-
-| No | Skenario Pengujian | Input / Aksi | Hasil yang Diharapkan |
-|---|---|---|---|
-| 1 | Form kosong | Langsung klik `Simpan` | Muncul pesan `NRP harus diisi!` |
-| 2 | NRP kosong | Nama dan field lain diisi, NRP kosong | Data tidak disimpan dan muncul validasi NRP |
-| 3 | NRP mengandung huruf | `ABC123456` | Muncul pesan NRP harus berupa angka 8–12 digit |
-| 4 | NRP terlalu pendek | `1234567` | Data ditolak |
-| 5 | NRP terlalu panjang | NRP lebih dari 12 digit | Data ditolak |
-| 6 | NRP valid | NRP 8–12 digit angka | Validasi NRP dilewati |
-| 7 | Nama kosong | NRP diisi, nama kosong | Muncul pesan nama harus diisi |
-| 8 | Nama terlalu pendek | Nama `AB` | Muncul pesan nama minimal 3 karakter |
-| 9 | Mata kuliah kosong | Tidak memilih mata kuliah | Muncul pesan pilih mata kuliah |
-| 10 | Tanggal kosong | Tidak memilih tanggal | Muncul pesan pilih tanggal |
-| 11 | Tanggal masa depan | Memilih tanggal setelah hari ini | Muncul pesan tanggal tidak boleh melebihi hari ini |
-| 12 | Status belum dipilih | Semua status tidak dipilih | Muncul pesan pilih status |
-| 13 | Izin tanpa keterangan | Status `Izin`, keterangan kosong | Data ditolak |
-| 14 | Sakit tanpa keterangan | Status `Sakit`, keterangan kosong | Data ditolak |
-| 15 | Izin dengan keterangan | Status `Izin` + keterangan | Data dapat diproses |
-| 16 | Sakit dengan keterangan | Status `Sakit` + keterangan | Data dapat diproses |
-| 17 | Data valid | Semua field valid | Data berhasil disimpan |
-
----
-
-## B. Pengujian CRUD
-
-| No | Skenario Pengujian | Aksi | Hasil yang Diharapkan |
-|---|---|---|---|
-| 18 | Create | Isi form lalu klik `Simpan` | Data baru muncul di DataGrid |
-| 19 | Create | Simpan data valid beberapa kali | Setiap data valid tersimpan |
-| 20 | Duplicate | Masukkan NRP + mata kuliah + tanggal yang sama | Muncul pesan data sudah ada |
-| 21 | Select Data | Klik salah satu baris DataGrid | Data masuk kembali ke form |
-| 22 | Update | Ubah nama/status/keterangan lalu klik `Update` | Data pada tabel berubah |
-| 23 | Update tanpa data | Tidak memilih baris lalu klik `Update` | Muncul pesan untuk memilih data |
-| 24 | Delete | Pilih data lalu klik `Hapus` | Dialog konfirmasi muncul |
-| 25 | Delete Cancel | Pada dialog pilih `No` | Data tetap ada |
-| 26 | Delete Confirm | Pada dialog pilih `Yes` | Data dihapus dari DataGrid dan database |
-| 27 | Reset | Klik `Reset` | Form kembali ke kondisi awal |
-
----
-
-## C. Pengujian Pencarian dan Filter
-
-| No | Skenario Pengujian | Aksi | Hasil yang Diharapkan |
-|---|---|---|---|
-| 28 | Search berdasarkan NRP | Masukkan NRP pada kotak pencarian | Data dengan NRP tersebut ditampilkan |
-| 29 | Search berdasarkan nama | Masukkan sebagian nama | Data yang sesuai keyword ditampilkan |
-| 30 | Search berdasarkan mata kuliah | Masukkan nama/sebagian mata kuliah | Data yang sesuai ditampilkan |
-| 31 | Search tidak ditemukan | Masukkan keyword yang tidak ada | DataGrid kosong dan total menjadi 0 |
-| 32 | Hapus keyword | Kosongkan kotak pencarian | Data kembali ditampilkan |
-| 33 | Filter Hadir | Pilih `Hadir` | Hanya data Hadir yang tampil |
-| 34 | Filter Izin | Pilih `Izin` | Hanya data Izin yang tampil |
-| 35 | Filter Sakit | Pilih `Sakit` | Hanya data Sakit yang tampil |
-| 36 | Filter Alpha | Pilih `Alpha` | Hanya data Alpha yang tampil |
-| 37 | Semua Status | Pilih `Semua Status` | Seluruh data kembali tampil |
-| 38 | Search + Filter | Gunakan pencarian sekaligus filter status | Data memenuhi kedua kondisi tersebut |
-
----
-
-## D. Pengujian Ringkasan Data
-
-| No | Skenario Pengujian | Aksi | Hasil yang Diharapkan |
-|---|---|---|---|
-| 39 | Data awal | Buka aplikasi | Ringkasan menampilkan total dan jumlah setiap status |
-| 40 | Setelah tambah data | Simpan satu data | Total dan kategori status diperbarui |
-| 41 | Setelah hapus data | Hapus satu data | Total dan kategori status berkurang |
-| 42 | Setelah filter | Pilih salah satu status | Ringkasan mengikuti data yang sedang ditampilkan |
-| 43 | Setelah pencarian | Masukkan keyword | Ringkasan mengikuti hasil pencarian |
-| 44 | Data kosong | Gunakan keyword yang tidak ditemukan | Total menjadi 0 dan persentase kehadiran menjadi 0% |
-
----
-
-# 22. Contoh Urutan Demonstrasi / Pengujian
-
-Untuk demonstrasi aplikasi, pengujian dapat dilakukan dengan urutan berikut:
-
-### Pengujian 1 — Menampilkan Data Awal
-
-1. Jalankan aplikasi.
-2. Pastikan DataGrid muncul.
-3. Periksa data dummy.
-4. Periksa ringkasan jumlah data.
-5. Pastikan terdapat beberapa status berbeda.
-
-**Screenshot yang dapat diambil:**
-
-```text
-Tampilan awal aplikasi + DataGrid + ringkasan
-```
-
----
-
-### Pengujian 2 — Menambahkan Data Hadir
-
-1. Isi NRP.
-2. Isi nama.
-3. Pilih mata kuliah.
-4. Pilih tanggal hari ini atau tanggal sebelumnya.
-5. Pilih status `Hadir`.
-6. Klik `Simpan`.
-7. Periksa DataGrid.
-8. Periksa ringkasan.
-
-**Hasil yang diharapkan:**
-
-Data baru muncul pada DataGrid dan jumlah data bertambah.
-
----
-
-### Pengujian 3 — Validasi NRP
-
-1. Kosongkan form.
-2. Masukkan NRP berupa huruf.
-3. Isi field lainnya.
-4. Klik `Simpan`.
-
-**Hasil yang diharapkan:**
-
-Data tidak disimpan dan aplikasi menampilkan pesan validasi NRP.
-
----
-
-### Pengujian 4 — Validasi Izin/Sakit
-
-1. Pilih status `Izin`.
-2. Kosongkan keterangan.
-3. Klik `Simpan`.
-
-**Hasil yang diharapkan:**
-
-Aplikasi menolak data dan meminta keterangan.
-
-Ulangi pengujian menggunakan status `Sakit`.
-
----
-
-### Pengujian 5 — Mencegah Duplikat
-
-1. Masukkan NRP yang sudah digunakan.
-2. Pilih mata kuliah yang sama.
-3. Gunakan tanggal yang sama.
-4. Klik `Simpan`.
-
-**Hasil yang diharapkan:**
-
-Aplikasi mendeteksi kombinasi:
-
-```text
-NRP + Mata Kuliah + Tanggal
-```
-
-dan menolak data duplikat.
-
----
-
-### Pengujian 6 — Update
-
-1. Klik salah satu baris DataGrid.
-2. Pastikan data masuk ke form.
-3. Ubah status atau keterangan.
-4. Klik `Update`.
-5. Periksa kembali baris tersebut.
-
-**Hasil yang diharapkan:**
-
-Data lama berubah menjadi data baru.
-
----
-
-### Pengujian 7 — Delete
-
-1. Pilih satu baris.
-2. Klik `Hapus`.
-3. Periksa dialog konfirmasi.
-4. Pilih `No`.
-
-**Hasil:**
-
-Data tetap ada.
-
-5. Klik `Hapus` lagi.
-6. Pilih `Yes`.
-
-**Hasil:**
-
-Data terhapus dari tabel.
-
----
-
-### Pengujian 8 — Search
-
-1. Klik kotak pencarian.
-2. Masukkan sebagian NRP atau nama.
-3. Amati DataGrid.
-
-**Hasil yang diharapkan:**
-
-DataGrid langsung menampilkan data yang sesuai dengan keyword.
-
----
-
-### Pengujian 9 — Filter Status
-
-1. Pilih `Alpha` pada filter status.
-2. Amati DataGrid.
-3. Ulangi dengan `Hadir`, `Izin`, dan `Sakit`.
-4. Kembalikan filter ke `Semua Status`.
-
-**Hasil yang diharapkan:**
-
-DataGrid menampilkan data sesuai status yang dipilih.
-
----
-
-### Pengujian 10 — Search + Filter
-
-1. Masukkan keyword pada pencarian.
-2. Pilih salah satu status.
-3. Amati hasil DataGrid.
-
-**Hasil yang diharapkan:**
-
-Data yang tampil memenuhi kondisi pencarian sekaligus status yang dipilih.
-
----
-
-# 23. Kesimpulan
+## Kesimpulan
 
 Student Attendance App merupakan aplikasi pengelolaan absensi mahasiswa berbasis desktop yang menerapkan konsep:
 
@@ -1061,4 +805,10 @@ Student Attendance App merupakan aplikasi pengelolaan absensi mahasiswa berbasis
 - Search dan filter untuk mempermudah pencarian data.
 - Ringkasan data untuk memberikan informasi jumlah dan persentase kehadiran.
 
-Dokumentasi screenshot dapat ditambahkan pada bagian **Dokumentasi Tampilan Aplikasi** dan setiap screenshot dapat dikaitkan dengan skenario pengujian pada bagian **Skenario Pengujian**.
+---
+
+## Disclaimer
+
+> **Data yang digunakan dalam aplikasi ini merupakan data dummy (data simulasi) yang dibuat semata-mata untuk keperluan pengembangan, pengujian, dan demonstrasi aplikasi. Data tersebut tidak merepresentasikan data mahasiswa, dosen, maupun pihak institusi yang sebenarnya dan tidak dimaksudkan untuk digunakan sebagai data resmi atau untuk keperluan administratif.**
+
+---
