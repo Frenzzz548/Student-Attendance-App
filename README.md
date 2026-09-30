@@ -8,9 +8,9 @@ Aplikasi desktop untuk mengelola data absensi mahasiswa menggunakan **C# WPF (.N
 
 | Data | Isi |
 |---|---|
-| **Nama** | `Bagus Cahya Saputra` |
-| **NRP** | `5025241067` |
-| **Kelas** | `PBKK-C` |
+| **Nama** | Bagus Cahya Saputra |
+| **NRP** | 5025241067 |
+| **Kelas** | PBKK-C |
 
 ---
 
